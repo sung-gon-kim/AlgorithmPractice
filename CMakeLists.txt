@@ -23,3 +23,4 @@ enable_testing()
 
 # Read sub-directories
 add_subdirectory(1.algorithms)
+add_subdirectory(2.divide-and-conquer)
