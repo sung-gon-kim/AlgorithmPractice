@@ -15,5 +15,12 @@ inline std::vector<int> RandomNumbers(std::size_t size, int lowerBound, int uppe
   std::generate(vec.begin(), vec.end(), [&]{ return di(dre); });
   return vec;
 }
+  
+inline std::vector<int> join(std::vector<int> first, std::vector<int> second) {
+  auto joined = first;
+  joined.insert(joined.end(), second.begin(), second.end());
+  return joined;
+}
 
+  
 #endif  // TESTUTILS_HPP_
