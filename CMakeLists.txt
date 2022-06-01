@@ -17,10 +17,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Load CMake modules
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/scripts)
-include(BuildModules)
+include(CMakeUtils)
 
 enable_testing()
 
 # Read sub-directories
-add_subdirectory(1.algorithms)
-add_subdirectory(2.divide-and-conquer)
+add_all_subdirectories()
